@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Login to a remote machine via ssh using a private key
+
+ssh ubuntu@107.23.70.14	-i ~/.ssh/school
