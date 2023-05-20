@@ -6,6 +6,5 @@ ufw allow 'Nginx HTTP'
 echo "Hello World!" > /var/www/html/index.html
 
 replacestr="server_name _;\n\tlocation = \/redirect_me {\n\treturn 301 https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4;\n\tclient_loop: send disconnect: Broken pipe
-michael@DESKTOP-V7KJQQN:~/alx-system_engineering-devops$
 sed -i "s/server_name _;/$replacestr/" /etc/nginx/sites-enabled/default
 service nginx start
